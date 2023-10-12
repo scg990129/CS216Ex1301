@@ -73,3 +73,10 @@ const rectangleType rectangleType::operator--(int number) {
 
     return temp;
 }
+
+rectangleType rectangleType::operator+(const rectangleType& other) const{
+    return rectangleType(this->height + other.height, this->width + other.width);
+}
+rectangleType rectangleType::operator-(const rectangleType& other) const{
+    return rectangleType(this->height - other.height, this->width - other.width);
+}

@@ -22,14 +22,8 @@ public:
     rectangleType& operator--(); //is correct. It is a prefix increment operator,
     const rectangleType operator--(int number);
 
-
-//    rectangleType& operator++() const;
-//    rectangleType operator++(const int number) const;
-//    rectangleType operator*(const rectangleType& other) const;
-//    bool operator==(const rectangleType& other) const;
-//    bool operator!=(const rectangleType& other) const;
-//    bool operator>>(const rectangleType& other) const;
-//    bool operator<<(const rectangleType& other) const;
+    rectangleType operator+(const rectangleType& other) const;
+    rectangleType operator-(const rectangleType& other) const;
 };
 
 
